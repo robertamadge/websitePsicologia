@@ -1,0 +1,16 @@
+
+<%# bg-light is background color & p-5 is padding %> 
+<div class="container-fluid text-sm-center p-5 bg-light">
+  <h1 class="display-4"> 
+    <%= @usuario.first_name %>
+    <%= @usuario.last_name %> 
+  </h1>  
+  <hr>
+  <p class="lead">
+    <%= @usuario.email %> | <%= @usuario.cpf %> | <%= @usuario.phone %>
+  </p>
+  <br/>
+  <%= link_to 'Edit', edit_usuario_path(@usuario), class:"btn btn-dark" %> 
+  <%= link_to 'Back', usuarios_path, class:"btn btn-dark" %>
+</div>
+
